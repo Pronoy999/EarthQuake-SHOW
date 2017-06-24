@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/magnitude"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_weight="0.19"
+        android:background="@drawable/magnitude_circle"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        tools:text="5.6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/location_offset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="30km S of"
+            android:layout_marginStart="16sp"
+            android:layout_marginLeft="16sp"/>
+
+        <TextView
+            android:id="@+id/primary_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="San Francisco, CA"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="Mar 6, 2010" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="3:00 PM" />
+
+    </LinearLayout>
+
+</LinearLayout>
